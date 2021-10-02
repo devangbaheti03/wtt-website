@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/Ramdeobaba-Logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our New Programs in 2020-2021</h1>
+        </section>
+
+<!-- ------- Blog -------  -->
+
+<section class="blog-content">
+    <div class="blog-left">
+        <img src="images/NextGenEngg.jpg" alt="">
+        <h2>Are you ready for Engineering 2.0</h2>
+        <img src="images/RCOEM_NewCourses.jpg" alt="">
+        <h2>RCOEM: A Place to Learn And Grow</h2>
+        <div class="comment-box">
+            <h3>Leave us a Comment/Feedback</h3>
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+    </div>
+    <div class="blog-right"></div>
+</section>
+
+<!-- ------- Footer -------  -->
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        RCOEM is one of the best engineering college in Nagpur, Maharashtra with AN ISO 9001:2015
+        certified Institution. NAAC ACCREDITED with 'A' Grade.
+    </p>
+    <div class="icons">
+        <a class="plain-link" href="https://twitter.com/RCOEM_Official"><i class="fa fa-twitter"></i></a>
+        <a class="plain-link" href="https://www.facebook.com/Shri-Ramdeobaba-College-of-Engineering-and-Management-Nagpur-India-301344790226543/?skip_nax_wizard=true"><i class="fa fa-facebook"></i></a>
+        <a class="plain-link" href="https://www.instagram.com/rcoem__official"><i class="fa fa-instagram"></i></a>
+        <a class="plain-link" href="https://www.youtube.com/channel/UCufL_1MVGtcmLjm2rQFBY9g"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p>
+        Made by Devang Baheti
+    </p>
+</section>
+
+<!-- -------------JavaScript for toggle menu------------ -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
