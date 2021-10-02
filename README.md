@@ -1,8 +1,8 @@
-#Web Technology Website Assignment
+# Web Technology Website Assignment
 
 An assignment where we have to create a webiste using HTML, CSS and other technologies that we need.
 
-##Made By
+## Made By
 
 **Name:** Devang Baheti
 **Roll no:** 39
