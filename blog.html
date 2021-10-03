@@ -39,13 +39,15 @@
         <h2>RCOEM: A Place to Learn And Grow</h2>
         <div class="comment-box">
             <h3>Leave us a Comment/Feedback</h3>
-            <form class="comment-form">
-                <input type="text" placeholder="Enter Name">
-                <input type="email" placeholder="Enter Email">
-                <textarea rows="5" placeholder="Your Comment"></textarea>
+            <form action="https://formspree.io/f/xrgrdkry" method="POST" class="comment-form">
+                <input type="text" name="name" id="Name" placeholder="Enter Name" required>
+                <input type="email" name="email" id="Email" placeholder="Enter Email" required>
+                <input type="text" name="subject" id="Subject" placeholder="Enter your Subject" required>
+                <textarea rows="5" name="message" id="Message" placeholder="Your Comment" required></textarea>
                 <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
             </form>
         </div>
+        <div id="status"></div>
     </div>
     <div class="blog-right"></div>
 </section>
@@ -68,6 +70,12 @@
         Made by Devang Baheti
     </p>
 </section>
+
+
+
+<!-- -------------JavaScript for form submission------------ -->
+<script src="main.js"></script>
+
 
 <!-- -------------JavaScript for toggle menu------------ -->
         <script>

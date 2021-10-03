@@ -64,13 +64,14 @@
         </div>
         <div class="contact-col">
             <h1>Post your Query</h1>
-            <form action="form-handler.php" method="POST">
-                <input type="text" name="name" placeholder="Enter your Name" required>
-                <input type="email" name="email" placeholder="Enter your Email" required>
-                <input type="text" name="subject" placeholder="Enter your Subject" required>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                <button class="hero-btn red-btn">Send Message</button>
+            <form action="https://formspree.io/f/xrgrdkry" id="contact-form" method="POST">
+                <input type="text" name="name" id="Name" placeholder="Enter your Name" required>
+                <input type="email" name="email" id="Email" placeholder="Enter your Email" required>
+                <input type="text" name="subject" id="Subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="message" id="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn submit-btn">Send Message</button>
             </form>
+            <div id="status"></div>
         </div>
     </div>
 </section>
@@ -96,11 +97,8 @@
 </section>
 
 
-
-
-
-
-
+<!-- -------------JavaScript for form submission------------ -->
+<script src="main.js"></script>
 
 <!-- -------------JavaScript for toggle menu------------ -->
         <script>

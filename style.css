@@ -189,7 +189,7 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .row {
     flex-direction: column;
   }
@@ -568,8 +568,53 @@ h3 {
   box-sizing: border-box;
 }
 
+.contact-col form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  border-radius: 10px;
+}
+
 @media (max-width: 700px) {
   .contact-col div h5 {
     font-size: 15px;
+  }
+}
+
+#status {
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#status.success {
+  background-color: rgb(142, 252, 98);
+  animation: status 4s ease forwards;
+}
+
+#status.failure {
+  background-color: rgb(245, 60, 60);
+  color: #fff;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
