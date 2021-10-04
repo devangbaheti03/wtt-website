@@ -6,14 +6,30 @@
 }
 
 body {
-  background-color: #ddd;
+  background-color: #eed;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .header {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)),
-    url(images/banner.png);
+    url(images/banner2.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -85,6 +101,7 @@ nav img {
 .plain-link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .hero-btn {
@@ -203,7 +220,7 @@ nav .fa {
     right: -200px;
     text-align: left;
     z-index: 2;
-    transition: 1s;
+    transition: 0.5s;
   }
   nav .fa {
     display: block;
@@ -224,6 +241,9 @@ nav .fa {
   }
 
   .header h3 {
+    display: none;
+  }
+  ::-webkit-scrollbar {
     display: none;
   }
 }
@@ -463,8 +483,14 @@ h3 {
   color: #f44336;
   margin: 0 13px;
   cursor: pointer;
-  padding: 18px 0;
+  /* padding: 18px 0; */
   font-size: 24px;
+}
+
+.icons-blue {
+  color: #3f5177;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 /* ------------Sub header---------- */
@@ -472,12 +498,30 @@ h3 {
 .sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/students.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
   color: white;
+}
+
+.sub-header-image-1 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner.png);
+}
+
+.sub-header-image-2 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/students.jpg);
+}
+
+.sub-header-image-3 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background2.png);
+}
+
+.sub-header-image-4 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/OAT.jpg);
 }
 
 .sub-header h1 {
