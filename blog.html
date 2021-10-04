@@ -37,15 +37,16 @@
         <h2>Are you ready for Engineering 2.0</h2>
         <img src="images/RCOEM_NewCourses.jpg" alt="">
         <h2>RCOEM: A Place to Learn And Grow</h2>
-        <div class="comment-box">
+        <div class="comment-box contact-col">
             <h3>Leave us a Comment/Feedback</h3>
-            <form id="contact-form" action="https://formspree.io/f/xrgrdkry" method="POST" class="comment-form">
-                <input type="text" name="name" id="Name" placeholder="Enter Name" required>
-                <input type="email" name="email" id="Email" placeholder="Enter Email" required>
-                <input type="text" name="subject" id="Subject" placeholder="Enter your Subject" required>
-                <textarea rows="5" name="message" id="Message" placeholder="Your Comment" required></textarea>
-                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            <form action="https://formspree.io/f/xrgrdkry" id="contact-form" method="POST">
+                <input type="text" name="Name" id="Name" placeholder="Enter your Name" required>
+                <input type="email" name="Email" id="Email" placeholder="Enter your Email" required>
+                <input type="text" name="Subject" id="Subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="Message" id="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn submit-btn">Send Message</button>
             </form>
+            <div id="status"></div>
         </div>
         <div id="status"></div>
     </div>

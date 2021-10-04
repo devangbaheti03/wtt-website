@@ -141,8 +141,8 @@ nav .fa {
   height: 72px;
   position: absolute;
   left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
+  margin-left: -10px;
+  bottom: 0px;
   z-index: 3;
 }
 
@@ -169,7 +169,7 @@ nav .fa {
   }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow {
   0% {
     opacity: 0;
   }
@@ -186,17 +186,17 @@ nav .fa {
 
 .arrows path.a1 {
   animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
   animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+  -webkit-animation-delay: 0s;
 }
 
 @media (max-width: 700px) {
@@ -237,7 +237,12 @@ nav .fa {
   .arrows {
     /* width: 40px;
     height: 28px; */
-    bottom: 90px;
+    bottom: 50px;
+    opacity: 0.8;
+  }
+
+  .arrows path {
+    stroke: #aaa;
   }
 
   .header h3 {
@@ -618,14 +623,14 @@ h3 {
   padding: 10px;
   margin: 15px 0;
   box-sizing: border-box;
-  border: 1px solid #222;
-  border-radius: 2px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   outline: none;
   background: #f0f0f0;
 }
 
 .comment-form button {
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 10px 0;
 }
 
@@ -642,8 +647,13 @@ h3 {
   padding: 20px;
 }
 
+.map {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 .location iframe {
   width: 100%;
+  margin-bottom: -10px;
 }
 
 .contact-us {
@@ -693,6 +703,7 @@ h3 {
   outline: none;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .contact-col form textarea {
